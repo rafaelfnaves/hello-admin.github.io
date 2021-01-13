@@ -9,6 +9,7 @@ _Control States to Cities, being able to comment on actions._
 
 ### Validation:
 * _rails g model State uf name_
-** States contains uf and name
+* States contains uf and name
+----
 * _rails g model City state:references name_
-** Cities contains state_id, name
+* Cities contains state_id, name
