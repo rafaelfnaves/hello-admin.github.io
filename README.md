@@ -17,5 +17,4 @@ _Control States to Cities, being able to comment on actions._
 * rails g active_admin:resource City
 * rails s
 ----
-obs: enable in states.rb | cities.rb  `permit_params`
-...
+![IMG](/home/rafael/Documents/active_admin.png)
