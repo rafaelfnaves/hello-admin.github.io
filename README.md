@@ -8,11 +8,14 @@
 ### Application: 
 _Control States to Cities, being able to comment on actions._
 
-### Validation:
-* _rails g model State uf name_
-* _rails g active_admin:resource State_
-* States contains uf and name
+### Validation(Order):
+* rails g model State uf name
+* rails g active_admin:resource State
+* rails db:migrate
+* rails g model City state:references name
+* rails db:migrate
+* rails g active_admin:resource City
+* rails s
 ----
-* _rails g model City state:references name_
-* _rails g active_admin:resource City_
-* Cities contains state_id, name
+obs: enable in states.rb | cities.rb  `permit_params`
+...
