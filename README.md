@@ -1,24 +1,14 @@
-# README
+# Introduction Active Admin - Ruby on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* ruby -v: 2.7.1
+* rails -v 6.0.3.2
+* activeadmin -v 2.9.0
 
-Things you may want to cover:
+### Application: 
+_Control States to Cities, being able to comment on actions._
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Validation:
+* _rails g model State uf name_
+** States contains uf and name
+* _rails g model City state:references name_
+** Cities contains state_id, name
